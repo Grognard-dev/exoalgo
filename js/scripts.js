@@ -9,13 +9,3 @@ function nullornot(){
         return false;
     }
 }
-
-
-
-
-
-
-
-
-
-
