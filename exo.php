@@ -1,28 +1,12 @@
- 1 ) M'afficher le resultat le plus grand
- 2 ) M'afficher le resultat le plus petit
- 3 ) Echanger le contenu de la variable a et b
- 4 ) Additionner la variable a et b
- 5 ) Afficher un nombre aléatoire entre 1 et 100 ;
- 6 ) Afficer un nombre aléatoire entre 5 et 10 ;
- 7 ) Faire une fonction Addition ;
- 8 ) Générer un chiffre aléatoire entre 1 et 100, "je suis nul si x < 50" sinon je suis bon 
- 9 ) Faire une fonction qui prend en paramètre x (nombre aléatoire entre 0 et 5), si x==1 alors afficher AAAA, si x==2 alors afficher BBBB, si x==2 alors afficher CCCC, si x==4 alors afficher DDDD, sinon je suis une perruche.
- 9 ) Faire la question 10 avec l'utilisation d'un switch Case
- 10 )
- Générer 10 valeur aléatoire, et afficher les 10 variable
- 11 )
- Ajouter 10 valeur aléatoire dans un tableau
- 12 )
- Parcourir ce tableau et afficher l'addition de tous ces résultats
- <?php
- 
- // Question 1
- 
- $a = 4;
- $b = 6;
- 
- echo ('question 1 <br><br>');
- if ($a < $b){
+<?php
+
+// Question 1
+
+$a = 4;
+$b = 6;
+
+echo ('question 1 <br><br>');
+if ($a < $b){
   echo "La variable b est la plus grande est égale à : ".$b;
 }
 elseif ($a == $b){
@@ -230,5 +214,89 @@ Exercice en js
   document.write(randoms);
   
   document.write ('question 7')
+  function addition(nb1, nb2){
+    document.write(nb1+nb2);
+  }
+  addition(3,9);
+  document.write ('question 8')
+  var randome = Math.floor(Math.random() * 101)
+  if (randome<50){
+    document.write('je suis nul');
+  }else{
+    document.write('je suis bon')
+  }
+  document.write ('question 9')
+   function aleatoire(x){
+  if (x==1){
+    document.write('AAAA');
+  }
+  else if (x==2){
+    document.write('BBBB');
+  }
+   else if (x==3){
+    document.write('CCCC');
+  }
+  else if (x==4){
+    document.write('DDDD');
+  }
+  else{
+    document.write('je suis une perruche')
+  }
+  }
+  var x = Math.floor(Math.random() * 6);
+  aleatoire(x);
   
+  function randoms(x){
+  switch (x) {
+    case 0:
+    document.write("je suis une perruche");
+    break;
+    case 1:
+   document.write('AAAA');
+    break;
+    case 2:
+     document.write('BBBB');
+    break;
+    case 3:
+    document.write('CCCC');
+    break;
+    case 4:
+    document.write('DDDD');
+    break;
+    case 5:
+    document.write("je suis une perruche");
+    break;
+  }
+}
+ var x = Math.floor(Math.random() * 6);
+  aleatoire(x);
+
+document.write ('question 10')
+var a = Math.floor(Math.random() * 11);
+var b = Math.floor(Math.random() * 11);
+var c = Math.floor(Math.random() * 11);
+var d = Math.floor(Math.random() * 11);
+var e = Math.floor(Math.random() * 11);
+var f = Math.floor(Math.random() * 11);
+var g = Math.floor(Math.random() * 11);
+var h = Math.floor(Math.random() * 11);
+var i = Math.floor(Math.random() * 11);
+var j = Math.floor(Math.random() * 11);
+document.write(a, b, c, d, e, f, g, h, i, j);
+
+document.write ('question 11')
+var monarray= new Array(a,b,c,d,e,f,g,h,i,j);
+document.write(monarray)
+
+document.write ('question 12')
+
+resultat = 0;
+
+monarray.forEach(function(val) {
+    resultat = resultat + val;
+});
+document.write( resultat);
+  
+
+
 </script>
