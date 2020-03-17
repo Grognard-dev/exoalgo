@@ -1,0 +1,1 @@
+document.write('Je suis une petite perruche');
